@@ -1,0 +1,75 @@
+{
+  "about": {
+    "buttonCV": "Descargar CV",
+    "description": "Vivo en el estado de Guanajuato en México, me especializo en JavaScript, React y TailwindCSS para crear hermosas experiencias de usuario. Me encanta resolver problemas, afrontar nuevos retos y alcanzar objetivos.<br><br>También tengo 8 años de experiencia trabajando como técnico de mantenimiento. Tengo un título en ingeniería en tecnologías de la información.<br><br>Algunas palabras que me describen: proactivo, perseverante, trabajador en equipo. Siempre estoy en formación, actualmente estoy aprendiendo AWS y Astro. Me encanta el fútbol, los videojuegos y la tecnología.",
+    "textAbout1": "Año Dev",
+    "textAbout2": "Proyectos",
+    "textAbout3": "Certificaciones"
+  },
+  "contact": {
+    "contact": "Contacto",
+    "description": "Contáctame para empezar con el desarrollo de tu proyecto <b>asilvazavala@gmail.com</b>",
+    "title": "¡Hablémos!"
+  },
+  "footer": {
+    "copyright": "Creado por Antonio Silva (2023) &#169;",
+    "githubButton": "Sígueme",
+    "githubDescription1": "Consulta mis repositorios sobre los proyectos que he creado.",
+    "linkedinButton": "Contáctame",
+    "linkedinDescription1": "Sígueme para revisar mis últimas publicaciones.",
+    "linkedinDescription2": "+1100 seguidores.",
+    "title": "¡Contáctame!",
+    "whatsappButton": "Enviar mensaje",
+    "whatsappDescription1": "Atención prioritaria y respuesta rápida.",
+    "whatsappDescription2": "Contactáme para resolver tus dudas."
+  },
+  "hero": {
+    "alert": "¡Gracias por tu visita! ❤️",
+    "name": "Hola, soy Antonio Silva",
+    "occupation": "Desarrollador Front-end"
+  },
+  "navbar": {
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "home": "Inicio",
+    "projects": "Proyectos"
+  },
+  "projects": {
+    "code": "Código",
+    "live": "Demo",
+    "project1Name": "Blog culemania",
+    "project1Description": "Noticias del FC Barcelona, tiene autenticación de usuario, CRUD de comentarios, base de datos, filtrado, renderizado condicional.",
+    "project2Name": "Acortador de links",
+    "project2Description": "Acorta el enlace que desees y cópialo al portapapeles con un solo clic, los enlaces se guardan en el almacenamiento local, información consumida desde una API.",
+    "project3Name": "Mundo pokemon",
+    "project3Description": "Busca, filtra, consulta, modifica, elimina y crea pokemon, los cuales son consumidos a través de una API externa y almacenados en una base de datos.",
+    "project4Name": "Tienda mi costura",
+    "project4Description": "Venta de ropa, cuenta con autenticación de usuario, pasarela de pago, filtros combinados, búsqueda, almacenamiento local, panel de administrador, reseñas.",
+    "project5Name": "Clínica fisioterapia",
+    "project5Description": "Puedes reservar una cita en la clínica, te llega una notificación por correo, cuenta con modo oscuro/claro y es adaptable a celulares.",
+    "project6Name": "Renta de carros",
+    "project6Description": "Renta cualquier carro fácil y rápido, cuenta con búsqueda por fabricante o modelo, renderizado condicional, modal con detalles del carro, diseño responsivo.",
+    "project7Name": "Calculadora de edad",
+    "project7Description": "Descubre la cantidad de años, meses y días que han pasado desde cualquier fecha, cuenta con validaciones.",
+    "project8Name": "3 en raya",
+    "project8Description": "Juega este clásico juego contra una persona o contra la computadora, tiene almacenamiento local para guardar el juego actual al recargar la página.",
+    "project9Name": "Reproductor de música",
+    "project9Description": "Reproduce algunas de mis canciones favoritas en un reproductor de música muy colorido, tiene reproducción automática.",
+    "project10Name": "Calculadora",
+    "project10Description": "Realiza cualquier operación matemática al alcance de un clic, además es adaptable a celulares.",
+    "project11Name": "Bienes raíces",
+    "project11Description": "Alquila o vende propiedades, puedes filtrar para encontrar casa en varios estados de México, asimismo puedes encontrarlas desde un mapa interactivo.",
+    "project12Name": "Panel de admin",
+    "project12Description": "Crea un espacio para gestionar ventas, productos, categorías de tu tienda online, también puedes tener más de una, tiene rutas protegidas.",
+    "project13Name": "Tienda de comida",
+    "project13Description": "Venta de alimentos, cuenta con pasarela de pago por raya, filtros, búsqueda, carrusel, almacenamiento local, panel de administración.",
+    "project14Name": "Gimnasio club",
+    "project14Description": "Esta web ofrece sencillez, prioriza la experiencia del usuario, únete a nosotros para transformar por completo tu cuerpo ¿Aceptas el reto?",
+    "project15Name": "Wiki países",
+    "project15Description": "Consulta cualquier país de todo el mundo, puedes buscar, filtrar y encontrar más de 250 países. Información consumida de una API.",
+    "title": "Mis proyectos"
+  },
+  "skills": {
+    "title": "Mis conocimientos"
+  }
+}

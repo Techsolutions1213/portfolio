@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antonio Silva">
+    <meta name="description" content="Portafolio de desarrollo web de Antonio Silva">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta property="og:image" content="imagenes/General/Sin-fondo-HTML-CSS-JS-React-removebg-preview.png">
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- Título -->
+    <title>Ralph Jackson | Senior Full Stack developer</title>
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/General/LogoAS.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">    
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Box Icons -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body class="dark">
+    <!-- Barra de navegación -->
+    <nav id="navbar" class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <!-- Navbar Responsive -->
+        <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="openMenuResponsive" class="navbar-toggler-icon"></span>
+          <span id="closeMenuResponsive" class="hide"><i class='bx bx-x'></i></span>
+        </button>
+        <!-- Logo -->
+        <img class="nav-link" id="logoAS" src="./imagenes/General/LogoAS.png" alt="LogoAS" width="60" height="50" title="Clic me">
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
+          <ul id="ulNav" class="navbar-nav d-flex justify-content-sm-between align-items-center ulNav">
+            <li class="nav-item">
+              <a data-section="navbar" data-value="home" class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a data-section="navbar" data-value="about" class="nav-link" href="#sobre-mi">About</a>
+            </li>
+            <li class="nav-item">
+              <a data-section="navbar" data-value="projects" class="nav-link" href="#proyectos">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a data-section="navbar" data-value="contact" class="nav-link" href="#contacto">Contact</a>
+            </li>
+          </ul> 
+        </div>
+        <!-- Cambiar tema -->
+        <div id="toggleTheme">
+          <label class="labelToggleTheme" for="checkboxTheme">
+            <input id="checkboxTheme" class="inputToggleTheme" type="checkbox">
+            <i title="Cambiar Tema" class='bx bxs-sun sun'></i>
+            <i title="Cambiar Tema" class='bx bxs-moon moon'></i>
+            <span class="toggle"></span>
+          </label>
+        </div>
+
+        <!-- Cambiar idioma -->
+        <div id="flags" class="flags">
+          <img class="englishSVG" src="./imagenes/General/english.svg" alt="English">
+          <span class="english">EN</span>
+          <input type="checkbox" id="checkboxIdiom">
+          <label for="checkboxIdiom" class="toggleIdiom"></label>
+          <span class="espanol">ES</span>
+          <img class="espanolSVG" src="./imagenes/General/spain.svg" alt="Español">
+        </div>
+
+        <div id='menu-backdrop' class='menuBackdrop'>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section id="home" class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <div id="alert" class="hide" role="alert">
+          <div data-section="hero" data-value="alert">Thanks for watching! ❤️</div>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="hero-imagen-perfil"></div> 
+        <h1 data-section="hero" data-value="name">Hi, I´m Ralph Jackson
+        </h1>
+        <div class="textAnimate">
+          <h2 id="occupation" class="occupationAnimation" data-section="hero" data-value="occupation">Senior Full Stack Developer</h2>
+        </div>
+        <div class="iconos-redes-sociales-hero d-flex flex-wrap align-items-center justify-content-center">
+          <article>
+            <a href="https://www.linkedin.com/in/ralph-jackson-91475330b/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <h3>Linkedin</h3>
+          </article>
+
+          <article>
+            <a href="https://github.com/Spacemin8" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github"></i>
+            </a>
+            <h3>Github</h3>
+          </article>
+
+          <article class="whatsapp">
+            <a href='https://api.whatsapp.com/send?phone=12133066358' target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-whatsapp'></i>
+            </a>
+            <h3>Whatsapp</h3>
+          </article>
+        </div>
+      </div>
+      <div class="hero-inferior">
+        <img decoding="async" loading="lazy" class="hero-imagen-inferior img-fluid" src="imagenes/General/Sin-fondo-HTML-CSS-JS-React-removebg-preview.png" alt="Monitor laptop y logos de HTML, CSS, JavaScript y React">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor d-flex flex-column justify-content-center align-items-center">
+        <header class="datosImportantes">
+          <article>
+            <span class="numberAbout">1+</span>
+            <span data-section="about" data-value="textAbout1" class="textoAbout">Year Dev</span>
+          </article>
+
+          <article>
+            <span class="numberAbout">20+</span>
+            <span data-section="about" data-value="textAbout2" class="textoAbout">Projects</span>
+          </article>
+
+          <article>
+            <span class="numberAbout">5+</span>
+            <span data-section="about" data-value="textAbout3" class="textoAbout">Certifications</span>
+          </article>
+
+          <article>
+            <span class="numberAbout">612</span>
+            <span class="textoAbout">Commits</span>
+          </article>
+        </header>
+        <p id="descriptionSobreMi" data-section="about" data-value="description" class="seccion-texto">I live in the state of California in United States, specialized in JavaScript, React and TailwindCSS to create beautiful user experiences. I love solving problems, facing new challenges and achieve objectives.<br><br>
+          Also have 8 years experience working as hardware and software maintenance technician. Have an engineering degree in information technology.
+          <br><br>
+          Some words that describe me: proactive, persevering, decisive, adaptable, teamplayer.
+          I´m always in training, currently learning AWS and Astro. I love football, video games and technology.
+          <br><br>
+        <div class="d-flex justify-content-center align-items-center">
+          <a download id="btnCV" class='boton-CV' href="./documents/Ralph Jackson- Senior Full Stack Developer.pdf" target="_blank" rel="noopener noreferrer">
+            <div class='wrapper'>
+              <i class='bx bx-download'></i>
+            </div>
+            <span data-section="about" data-value="buttonCV">Download CV</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes d-flex flex-column seccion-semiClara">
+      <h2 data-section="projects" data-value="title" class="seccion-titulo texto-negro">My projects</h2>
+      <section id="tranding">
+        <div class="containerProjectsSlider">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+
+              <article class="swiper-slide tranding-slide verdeClaro-verdeObscuro">
+                <figure class="tranding-slide-img imgRealState">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Interactive Rating Component.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/Real-estate.webp" alt="Real estate">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project11Name" class="project-name">Real estate</h2>
+                  <p data-section="projects" data-value="project11Description" class="project-description">Rent or sell properties, you can filter to find a house or apartment in various states of Mexico, you can also find them from an interactive map.</p>
+                  <footer class="slide-content-footer">
+                    <div class="stacks">
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/typescript-original.svg" alt="JavaScript"/>
+                        <h5 class="typescriptText">TypeScript</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/nextjs-original.svg" alt="nextJS" />
+                        <h5 class="nextjsText">Next.js</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="HTML"/>
+                        <h5 class="reactText">React</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                        <h5 class="tailwindText">Tailwind</h5>
+                      </article>
+                    </div>
+                    <div class="buttons-Projects">
+                      <article>
+                        <a href="https://github.com/Asilvazavala/Bienes-raices" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                        <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                      </article>
+                      <article>
+                        <a href="https://as-bienes-raices.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                        <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                      </article>
+                    </div>
+                  </footer>
+                </main>
+              </article>
+
+              <article class="swiper-slide tranding-slide naranjaOscuro-naranja">
+                <figure class="tranding-slide-img imgEcommerceBurger">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Todo.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/ecommerce-burger-house.webp" alt="Burger House">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project13Name" class="project-name">Burger House</h2>
+                  <p data-section="projects" data-value="project13Description" class="project-description">E-commerce food sale, has payment gateway by stripe, filters, search, carrousel, local storage, dashboard admin.</p>
+                  <footer class="slide-content-footer">
+                    <div class="stacks">
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/typescript-original.svg" alt="JavaScript"/>
+                        <h5 class="typescriptText">TypeScript</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/nextjs-original.svg" alt="nextJS" />
+                        <h5 class="nextjsText">Next.js</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="HTML"/>
+                        <h5 class="reactText">React</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                        <h5 class="tailwindText">Tailwind</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/stripe.svg" alt="Stripe"/>
+                        <h5 class="stripeText">Stripe</h5>
+                      </article>
+                    </div>
+                    <div class="buttons-Projects">
+                      <article>
+                        <a href="https://github.com/Asilvazavala/Ecommerce-Food" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                        <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                      </article>
+                      <article>
+                        <a href="https://as-ecommerce-food.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                        <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                      </article>
+                    </div>
+                  </footer>
+                </main>
+              </article>
+
+              <article class="swiper-slide tranding-slide rosa-rojo">
+                <figure class="tranding-slide-img imgBlog">
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/blog-barcelona.webp" alt="Blog barcelona">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project1Name" class="project-name">Blog culemania</h2>
+                  <p data-section="projects" data-value="project1Description" class="project-description">FC Barcelona news, has user authentication, CRUD of comments, saving information in database, filtering, conditional rendering.</p>
+                </main>
+                <footer class="slide-content-footer">
+                  <div class="stacks">
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript" />
+                      <h5 class="javascriptText">JavaScript</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="React" />
+                      <h5 class="reactText">React</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/postgresql-original.svg" alt="PostgreSQL" />
+                      <h5 class="postgreText">PostgreSQL</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/nodejs-original.svg" alt="NodeJS" />
+                      <h5 class="nodejsText">Node.js</h5>
+                    </article>
+                    <article>
+                      <img src="./imagenes/Technologys/auth0-icon.svg" alt="Auth0" />
+                      <h5 class="auth0Text">Auth0</h5>
+                    </article>
+                  </div>
+                  <div class="buttons-Projects">
+                    <article>
+                      <a href="https://github.com/Asilvazavala/Blog-barcelona" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                      <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                    </article>
+                    <article>
+                      <a href="https://blog-barcelona.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                      <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                    </article>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="swiper-slide tranding-slide azulCyan-azulFuerte">
+                <figure class="tranding-slide-img imgClinica">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Shortly.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/Clinica-fisio.webp" alt="Clinica-fisio">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project5Name" class="project-name">Physical clinic</h2>
+                  <p data-section="projects" data-value="project5Description" class="project-description">You can book an appointment at the clinic you receive a notification by email, it has dark/light mode and is adaptable to cell phones.</p>
+                  <footer class="slide-content-footer">
+                    <div class="stacks">
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/typescript-original.svg" alt="JavaScript"/>
+                        <h5 class="typescriptText">TypeScript</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="React" />
+                        <h5 class="reactText">React</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/astro-icon-light-gradient.svg" alt="Astro" />
+                        <h5 class="astroText">Astro</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                        <h5 class="tailwindText">Tailwind</h5>
+                      </article>
+                    </div>
+                    <div class="buttons-Projects">
+                      <article>
+                        <a href="https://github.com/Asilvazavala/agenda-fisioterapia" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                        <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                      </article>
+                      <article>
+                        <a href="https://agenda-fisioterapia.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                        <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                      </article>
+                    </div>
+                  </footer>
+                </main>
+              </article>
+
+              <article class="swiper-slide tranding-slide amarillo-negro">
+                <figure class="tranding-slide-img imgGym">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Gym As.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/GymAS.webp" alt="Gym">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project14Name" class="project-name">Gym fitness club</h2>
+                  <p data-section="projects" data-value="project14Description" class="project-description">This website offers simplicity and clean design, prioritizes user experience, join us to fit easily and completely your body, do you accept the challenge?</p>
+                  <footer class="slide-content-footer">
+                    <div class="stacks">
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                        <h5 class="javascriptText">JavaScript</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="HTML"/>
+                        <h5 class="reactText">React</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/css3-original.svg" alt="CSS"/>
+                        <h5 class="cssText">CSS</h5>
+                      </article>
+                    </div>
+                    <div class="buttons-Projects">
+                      <article>
+                        <a href="https://github.com/Asilvazavala/GYM-AS" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                        <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                      </article>
+                      <article>
+                        <a href="https://gym-as.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                        <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                      </article>
+                    </div>
+                  </footer>
+                </main>
+              </article>
+
+              <article class="swiper-slide tranding-slide cyan-azul">
+                <figure class="tranding-slide-img imgCountries">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Todo.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/countries-wiki.webp" alt="Countries Wiki">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project15Name" class="project-name">Countries wiki</h2>
+                  <p data-section="projects" data-value="project15Description" class="project-description">Consult countries from all around the world, you can search, filter, and find more than 250 countries. Information consumed from an API.</p>
+                  <footer class="slide-content-footer">
+                    <div class="stacks">
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/typescript-original.svg" alt="JavaScript"/>
+                        <h5 class="typescriptText">TypeScript</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/nextjs-original.svg" alt="nextJS" />
+                        <h5 class="nextjsText">Next.js</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="HTML"/>
+                        <h5 class="reactText">React</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                        <h5 class="tailwindText">Tailwind</h5>
+                      </article>
+                    </div>
+                    <div class="buttons-Projects">
+                      <article>
+                        <a href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C8-rest-countries-api" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                        <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                      </article>
+                      <article>
+                        <a href="https://countries-wiki-as.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                        <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                      </article>
+                    </div>
+                  </footer>
+                </main>
+              </article>
+
+              <article class="swiper-slide tranding-slide verde-azul">
+                <figure class="tranding-slide-img imgShorter">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Shortly.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/shorter-link.webp" alt="Shorter link">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project2Name" class="project-name">Shorter link</h2>
+                  <p data-section="projects" data-value="project2Description" class="project-description">Shorten the link you want and copy it to the clipboard with a single click, the links are saved in the local storage, information consumed from an API.</p>
+                  <footer class="slide-content-footer">
+                    <div class="stacks">
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                        <h5 class="javascriptText">JavaScript</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/html5-original.svg" alt="HTML"/>
+                        <h5 class="htmlText">HTML</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                        <h5 class="tailwindText">Tailwind</h5>
+                      </article>
+                    </div>
+                    <div class="buttons-Projects">
+                      <article>
+                        <a href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C7-url-shortening-api-master" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                        <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                      </article>
+                      <article>
+                        <a href="https://shorter-link-antonio-silva.netlify.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                        <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                      </article>
+                    </div>
+                  </footer>
+                </main>
+              </article>
+
+              <article class="swiper-slide tranding-slide naranja-rojo">
+                <figure class="tranding-slide-img imgMySeam">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/MySeam.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/MySeam.webp" alt="My seam">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project4Name" class="project-name">Marketplace</h2>
+                  <p data-section="projects" data-value="project4Description" class="project-description">Clothing sale, has user authentication, payment gateway, combined filters, search by name, local storage, dashboard admin, reviews.</p>
+                </main>
+                <footer class="slide-content-footer">
+                  <div class="stacks">
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript" />
+                      <h5 class="javascriptText">JavaScript</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="React" />
+                      <h5 class="reactText">React</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/nodejs-original.svg" alt="NodeJS" />
+                      <h5 class="nodejsText">Node.js</h5>
+                    </article>
+                    <article>
+                      <img src="./imagenes/Technologys/mercado-pago.svg" alt="MercadoPago" />
+                      <h5 class="mercadopagoText">MercadoPago</h5>
+                    </article>
+                    <article>
+                      <img src="./imagenes/Technologys/chakraui.svg" alt="ChakraJS" />
+                      <h5 class="chakrajsText">Chakra</h5>
+                    </article>
+                  </div>
+                  <div class="buttons-Projects">
+                    <article>
+                      <a href="https://github.com/Asilvazavala/My-Seam" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                      <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                    </article>
+                    <article>
+                      <a href="https://my-seam-chi.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                      <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                    </article>  
+                  </div>
+                </footer>
+              </article>
+  
+              <article class="swiper-slide tranding-slide lila-morado">
+                <figure class="tranding-slide-img imgSinEfecto">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Age Calculator.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/age-calculator.webp" alt="Age Calc">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project7Name" class="project-name">Age calculator</h2>
+                  <p data-section="projects" data-value="project7Description" class="project-description">Discover the number of years, months and days that have passed since any date, it has validations for leap years, months with less than 31 days.</p>
+                  <footer class="slide-content-footer">
+                    <div class="stacks">
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                        <h5 class="javascriptText">JavaScript</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/html5-original.svg" alt="HTML"/>
+                        <h5 class="htmlText">HTML</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                        <h5 class="tailwindText">Tailwind</h5>
+                      </article>
+                    </div>
+                    <div class="buttons-Projects">
+                      <article>
+                        <a href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C9-age-calculator-app-main" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                        <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                      </article>
+                      <article>
+                        <a href="https://age-calc-antonio-silva.netlify.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                        <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                      </article>
+                    </div>
+                  </footer>
+                </main>
+              </article>
+  
+              <article class="swiper-slide tranding-slide yellow-pink">
+                <figure class="tranding-slide-img imgSinEfecto">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/3 En Raya.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/3EnRaya.webp" alt="3 en Raya">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project8Name" class="project-name">Tic tac toe</h2>
+                  <p data-section="projects" data-value="project8Description" class="project-description">Play this classic game against a person or against the computer, it has local storage to save the current game when reloading the page.</p>
+                </main>
+                <footer class="slide-content-footer">
+                  <div class="stacks">
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                      <h5 class="javascriptText">JavaScript</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="React"/>
+                      <h5 class="reactText">React</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                      <h5 class="tailwindText">Tailwind</h5>
+                    </article>
+                  </div>
+                  <div class="buttons-Projects">
+                    <article>
+                      <a href="https://github.com/Asilvazavala/Juego-3-en-raya" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                      <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                    </article>
+                    <article>
+                      <a href="https://juego-3-en-raya.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                      <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                    </article>
+                  </div>
+                </footer>
+              </article>
+  
+              <article class="swiper-slide tranding-slide morado-rosa">
+                <figure class="tranding-slide-img imgSinEfecto">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Music-Player.webm" preload="metadata" loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/musicPlayer.webp" alt="Music Player">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project9Name" class="project-name">Music player</h2>
+                  <p data-section="projects" data-value="project9Description" class="project-description">Play some of my favorite songs in a very colorful music player, it has automatic playback after finishing the song.</p>
+                  <footer class="slide-content-footer">
+                    <div class="stacks">
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                        <h5 class="javascriptText">JavaScript</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/html5-original.svg" alt="HTML"/>
+                        <h5 class="htmlText">HTML</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/css3-original.svg" alt="CSS"/>
+                        <h5 class="cssText">CSS</h5>
+                      </article>
+                    </div>
+                    <div class="buttons-Projects">
+                      <article>
+                        <a href="https://github.com/Asilvazavala/Music-player" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                        <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                      </article>
+                      <article>
+                        <a href="https://music-player-as.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                        <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                      </article>
+                    </div>
+                  </footer>
+                </main>
+              </article>
+  
+              <article class="swiper-slide tranding-slide rojo-azul">
+                <figure class="tranding-slide-img imgSinEfecto">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Calculadora.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/calculator.webp" alt="Calculator">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project10Name" class="project-name">Calculator</h2>
+                  <p data-section="projects" data-value="project10Description" class="project-description">Perform any mathematical operation within the reach of a click, and it is also adaptable to cell phones.</p>
+                  <footer class="slide-content-footer">
+                    <div class="stacks">
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                        <h5 class="javascriptText">JavaScript</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="React"/>
+                        <h5 class="reactText">React</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/css3-original.svg" alt="CSS"/>
+                        <h5 class="cssText">CSS</h5>
+                      </article>
+                    </div>
+                    <div class="buttons-Projects">
+                      <article>
+                        <a href="https://github.com/Asilvazavala/My-projects/tree/main/004_calculator_react" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                        <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                      </article>
+                      <article>
+                        <a href="https://calculator-antonio-silva.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                        <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                      </article>           
+                    </div>
+                  </footer>
+                </main>
+              </article>
+
+              <article class="swiper-slide tranding-slide cyan-azul">
+                <figure class="tranding-slide-img imgCar">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Cars.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/car-Rent.webp" alt="Car rent">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project6Name" class="project-name">Car rent</h2>
+                  <p data-section="projects" data-value="project6Description" class="project-description">Rent a car quick and easy, has search by make or model, conditional rendering, car details, responsive design.</p>
+                </main>
+                <footer class="slide-content-footer">
+                  <div class="stacks">
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/typescript-original.svg" alt="JavaScript"/>
+                      <h5 class="typescriptText">TypeScript</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="React" />
+                      <h5 class="reactText">React</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/nextjs-original.svg" alt="nextJS" />
+                      <h5 class="nextjsText">Next.js</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                      <h5 class="tailwindText">Tailwind</h5>
+                    </article>
+                  </div>
+                  <div class="buttons-Projects">
+                    <article>
+                      <a href="https://github.com/Asilvazavala/cars-TypeScript" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                      <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                    </article>
+                    <article>
+                      <a href="https://cars-as.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                      <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                    </article>
+                  </div>
+                </footer>
+              </article>
+  
+              <article class="swiper-slide tranding-slide rojo-rojoFuerte">
+                <figure class="tranding-slide-img imgPokemon">
+                  <!-- <video loading="lazy" decoding="async" loading="lazy" decoding="async"src="./videos/Pokemon.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/PokemonWorld.webp" alt="Pokemon world">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project3Name" class="project-name">Pokemon world</h2>
+                  <p data-section="projects" data-value="project3Description" class="project-description">You can search, filter, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database.</p>
+                </main>
+                <footer class="slide-content-footer">
+                  <div class="stacks">
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript" />
+                      <h5 class="javascriptText">JavaScript</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="React" />
+                      <h5 class="reactText">React</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/redux-original.svg" alt="Redux" />
+                      <h5 class="reduxText">Redux</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/postgresql-original.svg" alt="PostgreSQL" />
+                      <h5 class="postgreText">PostgreSQL</h5>
+                    </article>
+                  </div>
+                  <div class="buttons-Projects">
+                    <article>
+                      <a href="https://github.com/Asilvazavala/deploy-pokemon" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                      <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                    </article>
+                    <article>
+                      <a href="https://pokemon-world-antonio-silva.vercel.app" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                      <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                    </article>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="swiper-slide tranding-slide azul-morado">
+                <figure class="tranding-slide-img imgDashboard">
+                  <!-- <video loading="lazy" decoding="async" src="./videos/Results Summary Component.webm" preload="metadata" muted loop></video> -->
+                  <img loading="lazy" decoding="async" src="./imagenes/Projects/dashboard-admin.webp" alt="dashboard admin">
+                </figure>
+                <main class="tranding-slide-content">
+                  <h2 data-section="projects" data-value="project12Name" class="project-name">Dashboard admin</h2>
+                  <p data-section="projects" data-value="project12Description" class="project-description">Create a space to manage sales, products, categories of your online store, you can also have more than one, it has protected routes.</p>
+                  <footer class="slide-content-footer">
+                    <div class="stacks">
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/typescript-original.svg" alt="JavaScript"/>
+                        <h5 class="typescriptText">TypeScript</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/nextjs-original.svg" alt="nextJS" />
+                        <h5 class="nextjsText">Next.js</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="HTML"/>
+                        <h5 class="reactText">React</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                        <h5 class="tailwindText">Tailwind</h5>
+                      </article>
+                      <article>
+                        <img loading="lazy" decoding="async" src="./imagenes/Technologys/mysql.svg" alt="TailwindCSS"/>
+                        <h5 class="mysqlText">MySQL</h5>
+                      </article>
+                    </div>
+                    <div class="buttons-Projects">
+                      <article>
+                        <a href="https://github.com/Asilvazavala/dashboard-admin" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                        <h5 data-section="projects" data-value="code" class="codeLiveText">Code</h5>
+                      </article>
+                      <article>
+                        <a href="https://as-dashboard-admin.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop liveIcon"></i></a>
+                        <h5 data-section="projects" data-value="live" class="codeLiveText">Live</h5>
+                      </article>
+                    </div>
+                  </footer>
+                </main>
+              </article>
+
+            </div>
+  
+            <div class="tranding-slider-control">
+              <div class="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </div>
+              <div class="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+    </section>    
+        
+    <!-- Contacto -->
+    <section class="contacto seccion-oscura" id="contacto">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <!-- Columna 1 -->
+            <div data-section="contact" data-value="title" class="col-12 col-md-4 titulo-creciendo seccion-titulo colorWhite">
+              Let's talk!
+            </div>
+            <!-- Columna 2 -->
+            <div data-section="contact" data-value="description" class="col-12 col-md-4 descripcion">
+              Contact me to start your web development project
+              <span class="mailContact">ralphjackson1003@gmail.com</span>
+            </div>
+            <!-- Columna 3 -->
+            <div class="col-12 col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <a id="btnCV" class="linkMail contactButton" href="mailto:ralphjackson1003@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <div class='wrapper'>
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <span data-section="contact" data-value="contact">Contact</span>
+                </a>  
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">     
+      <main class="main flow">
+        <div class="main__cards cards">
+          <div class="cards__inner">
+            <div class="cards__card card">
+              <h2 class="card__heading">Whatsapp</h2>
+              <p class="card__icon"><i class='bx bxl-whatsapp'></i></p>
+              <ul role="list" class="card__bullets flow">
+                <li data-section="footer" data-value="whatsappDescription2">Contact me to resolve your questions.</li>
+                <li data-section="footer" data-value="whatsappDescription1">Priority attention and quick response.</li>
+              </ul>
+              <a data-section="footer" data-value="whatsappButton" target='_blank' rel='noopener noreferrer' href='https://api.whatsapp.com/send?phone=524561148433' class="card__cta cta">Send message</a>
+            </div>
+      
+            <div class="cards__card card">
+              <h2 class="card__heading">Linkedin</h2>
+              <p class="card__icon"><i class='bx bxl-linkedin-square'></i></p>
+              <ul role="list" class="card__bullets flow">
+                <li data-section="footer" data-value="linkedinDescription1">Follow me to check my latest posts.</li>
+                <li data-section="footer" data-value="linkedinDescription2">+1100 followers.</li>
+              </ul>
+              <a data-section="footer" data-value="linkedinButton" href="https://www.linkedin.com/in/antonio-silva-developer/" target="_blank" rel="noopener noreferrer" class="card__cta cta">Contact me</a>
+            </div>
+      
+            <div class="cards__card card">
+              <h2 class="card__heading">Github</h2>
+              <p class="card__icon"><i class='bx bxl-github'></i></p>
+              <ul role="list" class="card__bullets flow">
+                <li data-section="footer" data-value="githubDescription1">Check out my repositories for projects I've created.</li>
+                <li>+600 commits.</li>
+              </ul>
+              <a data-section="footer" data-value="githubButton" href="https://github.com/Spacemin8" target="_blank" rel="noopener noreferrer" class="card__cta cta">Follow me</a>
+            </div>
+          </div>
+          
+          <div class="overlay cards__inner"></div>
+        </div>
+      </main>
+
+      <div data-section="footer" data-value="copyright" class="derechos-de-autor">
+        Created by Ralph Jackson(2023) &#169;
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS-->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script defer src="./script.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,75 @@
+{
+  "about": {
+    "buttonCV": "Download CV",
+    "description": "I live in the state of Guanajuato in Mexico, specialized in JavaScript, React and TailwindCSS to create beautiful user experiences. I love solving problems, facing new challenges and achieve objectives.<br><br>Also have 8 years experience working as hardware and software maintenance technician. Have an engineering degree in information technology.<br><br>Some words that describe me: proactive, persevering, decisive, adaptable, teamplayer. I´m always in training, currently learning AWS and Astro. I love football, video games and technology.",
+    "textAbout1": "Year Dev",
+    "textAbout2": "Projects",
+    "textAbout3": "Certifications"
+  },
+  "contact": {
+    "contact": "Contact",
+    "description": "Contact me to start your web development project <b>asilvazavala@gmail.com</b>",
+    "title": "Let´s talk!"
+  },
+  "footer": {
+    "copyright": "Created by Antonio Silva (2023) &#169;",
+    "githubButton": "Follow me",
+    "githubDescription1": "Check out my repositories for projects I've created.",
+    "linkedinButton": "Contact me",
+    "linkedinDescription1": "Follow me to check my latest posts.",
+    "linkedinDescription2": "+1100 followers.",
+    "title": "Contact me!",
+    "whatsappButton": "Send message",
+    "whatsappDescription1": "Priority attention and quick response.",
+    "whatsappDescription2": "Contact me to resolve your questions."
+  },
+  "hero": {
+    "alert": "Thanks for watching! ❤️",
+    "name": "Hi, I´m Antonio Silva",
+    "occupation": "Front-end developer"
+  },
+  "navbar": {
+    "about": "About",
+    "contact": "Contact",
+    "home": "Home",
+    "projects": "Projects"
+  },
+  "projects": {
+    "code": "Code",
+    "live": "Demo",
+    "project1Name": "Blog culemania",
+    "project1Description": "FC Barcelona news, has user authentication, CRUD of comments, saving information in database, filtering, conditional rendering.",
+    "project2Name": "Shorter link",
+    "project2Description": "Shorten the link you want and copy it to the clipboard with a single click, the links are saved in the local storage, information consumed from an API.",
+    "project3Name": "Pokemon world",
+    "project3Description": "You can search, filter, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database.",
+    "project4Name": "Marketplace",
+    "project4Description": "Clothing sale, has user authentication, payment gateway, combined filters, search by name, local storage, dashboard admin, reviews.",
+    "project5Name": "Physical clinic",
+    "project5Description": "You can book an appointment at the clinic you receive a notification by email, it has dark/light mode and is adaptable to cell phones.",
+    "project6Name": "Car rent",
+    "project6Description": "Rent a car quick and easy, has search by make or model, conditional rendering, car details, responsive design.",
+    "project7Name": "Age calculator",
+    "project7Description": "Discover the number of years, months and days that have passed since any date, it has validations for leap years, months with less than 31 days.",
+    "project8Name": "Tic tac toe",
+    "project8Description": "Play this classic game against a person or against the computer, it has local storage to save the current game when reloading the page.",
+    "project9Name": "Music player",
+    "project9Description": "Play some of my favorite songs in a very colorful music player, it has automatic playback.",
+    "project10Name": "Calculator",
+    "project10Description": "Perform any mathematical operation within the reach of a click, and it is also adaptable to cell phones.",
+    "project11Name": "Real estate",
+    "project11Description": "Rent or sell properties, you can filter to find a house or apartment in various states of Mexico, you can also find them from an interactive map.",
+    "project12Name": "Dashboard admin",
+    "project12Description": "Create a space to manage sales, products, categories of your online store, you can also have more than one, it has protected routes.",
+    "project13Name": "E-commerce",
+    "project13Description": "E-commerce food sale, has payment gateway by stripe, filters, search, carrousel, local storage, dashboard admin.",
+    "project14Name": "Gym fitness club",
+    "project14Description": "This website offers simplicity and clean design, prioritizes user experience, join us to fit easily and completely your body, do you accept the challenge?",
+    "project15Name": "Countries wiki",
+    "project15Description": "Consult countries from all around the world, you can search, filter, and find more than 250 countries. Information consumed from an API.",
+    "title": "My projects"
+  },
+  "skills": {
+    "title": "My skills"
+  }
+}
